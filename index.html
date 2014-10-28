@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Color Memory Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ 
+  <link href='http://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="game">
+	<h1>Test Your Memory</h1></header>
+	<button class="buttons" onclick="start()">S t a r t</button>
+	<button class="buttons" onclick="reset()">R e s e t</button>
+
+	<div class="boxes">
+		<div class="box" id="red" onclick="checkInput('red')"></div>
+		<div class="box" id="blue" onclick="checkInput('blue')"></div>
+		<div class="box" id="yellow" onclick="checkInput('yellow')"></div>
+		<div class="box" id="green" onclick="checkInput('green')"></div>
+	</div>
+
+	<div class="score">Current Level: <span id="level">0</span></div>
+	<div class="score">Top Level: <span id="topLevel">0</span></div>
+</div>
+<script src="simpleSimon.js"></script>
+</body>
+</html>
